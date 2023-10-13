@@ -26,12 +26,44 @@ function Header() {
             <h1 className="text-lg ml-1">Circles</h1>
           </div>
           {/* SearchIcon */}
-          <div className="header__search mr-5 w-full">
+          <div className="header__search mr-5 md:w-full flex items-center">
             <input
-              className="border rounded-xl p-1 w-full"
+              className="border rounded-xl py-1 px-3 w-full lg:block hidden"
               type="text"
-              placeholder="Search circles"
+              placeholder="Search"
             />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6 text-gray-500 mx-auto -ml-9"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+
+            <div className="iconSearch">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 text-gray-500 mx-auto hidden"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+              <p className="text-gray-500 block lg:hidden">Search</p>
+            </div>
           </div>
           <div className="activity-area flex gap-5 ">
             {/* HomeIcon */}
@@ -71,7 +103,7 @@ function Header() {
                 />
               </svg>
 
-              <p className="text-gray-500">People</p>
+              <p className="text-gray-500">Circles</p>
             </div>
             {/* JobsIcon */}
             <div className="jobs">
