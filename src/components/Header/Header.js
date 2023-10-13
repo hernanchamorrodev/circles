@@ -7,8 +7,11 @@ function Header() {
     <div className="header">
       <div className="header__left">
         {/* Logo */}
+        <img src="" alt="" />
         {/* SearchIcon */}
-        <input type="text" placeholder="Search into circles" />
+        <div className="header__search">
+          <input type="text" placeholder="Search circles" />
+        </div>
       </div>
 
       <div className="header__right">
