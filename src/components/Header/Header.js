@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./Header.css";
-
 function Header() {
   return (
     <div className="flex w-full border-gray-200 p-3 border-b">
